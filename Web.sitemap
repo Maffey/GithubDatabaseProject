@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="~/Default.aspx" title="strona główna"  description="">
+      <siteMapNode url="#wiad" title="Wiadomości" description="Wszystkie zadania związane z wiadomościami">
+        <siteMapNode url="~/wyslij_wiadomosc.aspx" title="wyślij wiadomość"  description=""/>
+        <siteMapNode url="#admin" title="admin" description="Panel administracji">
+          <siteMapNode url="~/administracja/dodaj_dzial.aspx" title="dodaj dział"  description=""/>
+          <siteMapNode url="~/administracja/przegladaj_dzialami.aspx" title="przeglądaj działami"  description=""/>
+          <siteMapNode url="~/administracja/przegladaj_wiadomosci.aspx" title="przeglądaj wiadomości"  description=""/>
+          <siteMapNode url="~/administracja/zarzadzaj_dzialami.aspx" title="zarządzaj działami"  description=""/>
+          <siteMapNode url="~/administracja/zarzadzaj_dzialami1.aspx" title="zarządzaj działami, usprawniona wersja"  description=""/>
+          <siteMapNode url="~/administracja/zarzadzaj_wiadomosciami.aspx" title="zarządzaj wiadomościami"  description=""/>
+          <siteMapNode url="~/administracja/zarzadzaj_wiadomosciami1.aspx" title="zarządzaj wiad., usprawniona wersja"  description=""/>
+          <siteMapNode url="~/administracja/zarzadzaj_uzytkownikami.aspx" title="zarządzaj użytkownikami"  description=""/>
+         </siteMapNode>
+        </siteMapNode>
+      <siteMapNode url="#github" title="Github" description="Github Repository Project">
+        <siteMapNode url="~/github/AddLangInst.aspx" title="Add Language Institution"  description=""/>
+        <siteMapNode url="~/github/CreateRepository.aspx" title="Create Github Repository"  description=""/>
+        <siteMapNode url="~/github/ShowLanguages.aspx" title="Show Languages List"  description=""/>
+        <siteMapNode url="~/github/AddLanguage.aspx" title="Add Language"  description=""/>
+      </siteMapNode>
+    </siteMapNode>
+</siteMap>

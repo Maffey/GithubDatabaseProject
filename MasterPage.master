@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<!-- Dodaj wlasna baze danych, dodaj folder, dodaj 2 operacje na tej bazie, najlepiej jakis insert i select -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+<body bgcolor="#99ccff">
+    <form id="form1" runat="server">
+    <div>
+            
+            <p>
+                Witam serdecznie na serwerze!</p>
+            <p>
+                <asp:Calendar ID="Calendar2" runat="server" BackColor="#66CCFF" 
+                    BorderColor="Blue"></asp:Calendar>
+                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" 
+                    LogoutPageUrl="~/Default.aspx" />
+            </p>
+            <p>
+                Zalogowany jako:
+                <asp:LoginName ID="LoginName1" runat="server" />
+            </p>
+
+            <asp:Menu ID="Menu1" runat="server" BackColor="#33CCCC" 
+                DataSourceID="SiteMapDataSource1" DynamicHorizontalOffset="2" 
+                Font-Names="Verdana" Font-Size="Medium" ForeColor="#000099" 
+                Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="10px">
+                <DynamicHoverStyle BackColor="#284E98" ForeColor="White" />
+                <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <DynamicMenuStyle BackColor="#B5C7DE" />
+                <DynamicSelectedStyle BackColor="#507CD1" />
+                <StaticHoverStyle BackColor="#284E98" ForeColor="White" />
+                <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                <StaticSelectedStyle BackColor="#507CD1" />
+            </asp:Menu>
+            <p>
+                <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+            </p>
+
+            <p style="font-style: italic">
+                Made by Maffey</p>
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
